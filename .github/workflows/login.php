@@ -10,10 +10,10 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
 // Traitement du formulaire de connexion
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Informations de connexion à la base de données
-    $servername = "mysql-nolannlev.alwaysdata.net";
-    $username = "nolannlev_1";
-    $password = "tpphpmdp";
-    $dbname = "nolannlev_tliens";
+    $servername = "...";
+    $username = "...";
+    $password = "...";
+    $dbname = "...";
 
     // Récupérer les informations du formulaire
     $username_input = $_POST['username'];

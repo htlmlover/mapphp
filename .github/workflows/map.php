@@ -57,10 +57,10 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true ) {
 
     <?php
     
-    $serveur = "mysql-nolannlev.alwaysdata.net";
-    $dbname = "nolannlev_mesures";
-    $user = "nolannlev_1";
-    $pass = "tpphpmdp";
+    $serveur = "...";
+    $dbname = "...";
+    $user = "...";
+    $pass = "...";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Récupération des données du formulaire

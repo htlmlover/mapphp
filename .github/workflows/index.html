@@ -1,0 +1,403 @@
+
+<html>
+  <body>
+  <head>
+    <h1><center>BTS CIEL 56</center></h1>
+    
+    <nav role="navigation">
+      <div id="menuToggle">
+    
+        <input type="checkbox" />
+      
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <ul id="menu">
+            <li><a href="index.html">HUB</a></li>
+            <li><a href="carte2.php">Carte</a></li>
+            <li><a href="login.php" style="color: red;">Login</a></li>
+                </ul>
+      </div>
+    </nav>
+    
+      
+  </head>    
+    </form> <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br>
+    <center><div class="fire">
+      <div class="fire-left">
+        <div class="main-fire"></div>
+        <div class="particle-fire"></div>
+      </div>
+      <div class="fire-center">
+        <div class="main-fire"></div>
+        <div class="particle-fire"></div>
+      </div>
+      <div class="fire-right">
+        <div class="main-fire"></div>
+        <div class="particle-fire"></div>
+      </div>
+      <div class="fire-bottom">
+        <div class="main-fire"></div>
+      </div>
+    </div></center>
+
+    
+    
+    <style type="text/css">
+    
+
+
+    @keyframes scaleUpDown {
+  0%, 100% {
+    transform: scaleY(1) scaleX(1);
+  }
+
+  50%, 90% {
+    transform: scaleY(1.1);
+  }
+
+  75% {
+    transform: scaleY(0.95);
+  }
+
+  80% {
+    transform: scaleX(0.95);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: skewX(0) scale(1);
+  }
+
+  50% {
+    transform: skewX(5deg) scale(0.9);
+  }
+}
+
+@keyframes particleUp {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    top: -100%;
+    transform: scale(0.5);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    background-color: #ef5a00;
+  }
+
+  50% {
+    background-color: #ff7800;
+  }
+}
+
+.fire {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fire-center {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  animation: scaleUpDown 3s ease-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.fire-center .main-fire {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(farthest-corner at 10px 0, #d43300 0%, #ef5a00 95%);
+  transform: scaleX(0.8) rotate(45deg);
+  border-radius: 0 40% 60% 40%;
+  filter: drop-shadow(0 0 10px #d43322);
+}
+
+.fire-center .particle-fire {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  width: 10px;
+  height: 10px;
+  background-color: #ef5a00;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px #d43322);
+  animation: particleUp 2s ease-out 0;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.fire-right {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  animation: shake 2s ease-out 0;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.fire-right .main-fire {
+  position: absolute;
+  top: 15%;
+  right: -25%;
+  width: 80%;
+  height: 80%;
+  background-color: #ef5a00;
+  transform: scaleX(0.8) rotate(45deg);
+  border-radius: 0 40% 60% 40%;
+  filter: drop-shadow(0 0 10px #d43322);
+}
+
+.fire-right .particle-fire {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #ef5a00;
+  transform: scaleX(0.8) rotate(45deg);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px #d43322);
+  animation: particleUp 2s ease-out 0;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.fire-left {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  animation: shake 3s ease-out 0;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.fire-left .main-fire {
+  position: absolute;
+  top: 15%;
+  left: -20%;
+  width: 80%;
+  height: 80%;
+  background-color: #ef5a00;
+  transform: scaleX(0.8) rotate(45deg);
+  border-radius: 0 40% 60% 40%;
+  filter: drop-shadow(0 0 10px #d43322);
+}
+
+.fire-left .particle-fire {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 10%;
+  height: 10%;
+  background-color: #ef5a00;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px #d43322);
+  animation: particleUp 3s infinite ease-out 0;
+  animation-fill-mode: both;
+}
+
+.fire-bottom .main-fire {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  width: 75%;
+  height: 75%;
+  background-color: #ff7800;
+  transform: scaleX(0.8) rotate(45deg);
+  border-radius: 0 40% 100% 40%;
+  filter: blur(10px);
+  animation: glow 2s ease-out 0;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  
+  /* make it look decent enough */
+  background: rgb(0, 0, 0);
+  color: black;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+h1{
+color: white;
+margin-top: 20px;
+font-size: 50px;
+}
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: -75px;
+  padding-left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: rgb(100, 100, 100);
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: 50px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+
+
+    </style> 
+  </body>
+</html>
